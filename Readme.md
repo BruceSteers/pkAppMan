@@ -23,8 +23,8 @@ load your existing one if you have one.
 -- after first launch (must be run from terminal as root)
 it adds the gambas runtime to the pkexec list of apps and
 after that if not run as root (ie just double click app) it will 
-relaunch itself with the pkexec prefix to ask for password
- Also. with the gambas runtime added any gambas app that wants
+relaunch itself with the pkexec prefix to ask for password.
+Also with the gambas runtime added any gambas app that wants
 root access can use pkexec prefix.
 
 -- pass a file as an argument, if launched with a file name as 
