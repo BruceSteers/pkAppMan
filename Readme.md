@@ -39,8 +39,8 @@ the Message is what is displayed when asked for password.
 
 
 Requirements:
-gambas3-runtime
-'sudo apt-get install gambas3-runtime'
+minimal is the gambas3-runtime and the gambas3 components the app needs
+'sudo apt-get install gambas3-runtime gambas3-gb-args gambas3-gb-image gambas3-gb-gui gambas3-gb-form gambas3-gb-settings'
 
 Important: on 1st ever running of the application you must run via sudo from a terminal.
 ie.
