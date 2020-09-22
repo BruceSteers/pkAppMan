@@ -23,8 +23,8 @@ load your existing one if you have one.
 -- after first launch (must be run from terminal as root)
 it adds the gambas runtime to the pkexec list of apps and
 after that if not run as root (ie just double click app) it will 
-relaunch itself with the pkexec prefix to ask for password.
-Also with the gambas runtime added any gambas app that wants
+relaunch itself with the pkexec prefix to ask for password
+ Also. with the gambas runtime added any gambas app that wants
 root access can use pkexec prefix.
 
 -- pass a file as an argument, if launched with a file name as 
@@ -37,10 +37,21 @@ with said file auto added.
 The description is just so you know what it is in the list
 the Message is what is displayed when asked for password.
 
+New in Version 2
+Launcher makers
+Now you can right click a program in the list and choose to create either a
+Desktop launcher file or a menu launcher for it.
+
+You can create a stanalone launcher for the selected program
+Eg, If the Gambas3 IDE is in your list then creates a launcher to run Gambas3 as root
+Or a sub launcher for selected program to launch another app
+Eg, selecting gbr3 in the list to launch pkAppMan.gambas
+
+Also an option to create a desktop launcher or menu item for pkappMan itself
 
 Requirements:
-minimal is the gambas3-runtime and the gambas3 components the app needs
-'sudo apt-get install gambas3-runtime gambas3-gb-args gambas3-gb-image gambas3-gb-gui gambas3-gb-form gambas3-gb-settings'
+gambas3-runtime
+'sudo apt-get install gambas3-runtime'
 
 Important: on 1st ever running of the application you must run via sudo from a terminal.
 ie.
@@ -66,6 +77,13 @@ Eg. to make a launcher for pluma text editor as root
 add a rule and set it to '/usr/bin/pluma' (it should be there)
 Then set the launchers command to 'pkexec pluma'
 Or 'pkexec pluma "<path to file>"' to open a file
+
+Right clicking an item gives option to create a launcher for you.
+Options are to create a desktop launcher or menu item.
+Launcher can be made for the app selected or for another program using the app selected.
+Ie, 
+To make a launcher to run xed the text editor as root (assuming you've added it)
+Or to make a launcher for pkAppMan selecting gbr3 and choosing the pkAppMan exec when asked.
 
 Downloading...
 Download pkAppMan.gambas for the standalone application file.
